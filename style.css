@@ -1,0 +1,251 @@
+*{
+margin: 0;
+padding: 0;
+}
+a{
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(img/images1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 3% 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav h3{
+    color: rgb(70, 179, 198);
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.nav-menu{
+    flex: 1;
+    text-align: right;
+}
+.nav-menu ul li {
+    list-style: none;
+    display: inline;
+    margin: 0px 10px;
+    position: relative;
+}
+.nav-menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.nav-menu ul li::before{
+    content: ' ';
+    width: 0px;
+    height: 3px;
+    background: rgb(113, 221, 210);
+    display: inline;
+    margin: auto;
+    position: absolute;
+    bottom: -5px;
+    transition: .5s;
+
+}
+.nav-menu ul li:hover:before{
+    width: 100%;
+}
+.profile-image{
+    width: 35%;
+    top: 35%;
+    left: 60%;
+    position: absolute;
+    transform: translate(25% -50%);
+}
+.title-description{
+    width: 90%;
+    top: 50%;
+    color: antiquewhite;
+    position: absolute;
+    left: 5%;
+}
+.title-description h1{
+    font-size: 40px;
+    color: aqua;
+}
+.title-description p{
+    font-size: 17px;
+    margin: 10px 0 40px;
+    color: beige;
+}
+.title-description a{
+    display: inline-block;
+    text-decoration: none;
+    color: mediumseagreen;
+    border: 2px solid rgb(24, 23, 23);
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 18px;
+
+}
+.title-description a:hover{
+    background: greenyellow;
+    border: 2px solid rgb(5, 11, 16);
+    transition: 1s;
+    color: black;
+}
+/* ------about-me------- */
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+.about-me{
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+    width: 80%;
+
+}
+.about-me h1{
+    text-decoration: underline;
+    color: maroon;
+}
+.about-me-col{
+    flex-basis: 45%;
+    border-radius: 10px;
+    margin-bottom: 4%;
+}
+.about-me-col img{
+    width: 70%;
+    border-radius: 50%;
+}
+.about-me-col h2{
+    margin-top: 14px;
+    margin-bottom: 14px;
+    text-align: left;
+}
+.about-me-col p{
+    color: #777;
+    font-size: 14px;
+    text-align: left;
+    line-height: 20px;
+    padding: 12px;
+    font-weight: 300;
+    text-align: justify;
+}
+/* ----my skil section---- */
+
+.my-skill{
+    margin: auto;
+    padding-top: 100px;
+    width: 90%;
+    background: rgb(223, 183, 189);
+}
+.my-skill h1{
+    text-align: center;
+    text-decoration: underline;
+
+}
+.myskill-col{
+    flex-basis: 45%;
+    border-radius: 10px;
+    margin-bottom: 4%;
+    padding: 20px;
+}
+.myskill-col h2{
+    text-align: left;
+    margin-bottom: 15px;
+    color: blue;
+    padding: 12px;
+}
+.myskill-col p{
+    font-size: 15px;
+    color: #030f16;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 12px;
+    text-align: left;
+}
+.myskill-col .bar{
+    display: block;
+    height: 2px;
+    border: 1px solid wheat;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgb(127, 131, 255);
+
+}
+.myskill-col .bar span{
+    height: 20px;
+    float: left;
+    background: black;
+    
+}
+.html{
+    width: 90%;
+    animation: html 2s;
+}
+.css{
+    width: 70%;
+    animation: css 2s;
+}
+.JQuery{
+    width: 50%;
+    animation: JQuery 2s;
+}
+.Javascript{
+    width: 30%;
+    animation:Javascript 2s;
+}
+
+footer.footer {
+    background-color: #000000;
+    text-align: center;
+}
+
+
+
+footer p{
+    color: #ffffff;
+    padding: 10px;
+}
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes JQuery{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+@keyframes Javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 30%;
+    }
+}
